@@ -1,3 +1,5 @@
+package com.example.blackjack.Model;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
