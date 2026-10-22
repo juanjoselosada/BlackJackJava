@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane prefHeight="279.0" prefWidth="309.0">
+      <children>
+        <ImageView fitHeight="91.0" fitWidth="100.0" layoutX="105.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="" />
+          </image></ImageView>
+        <Label layoutX="93.0" layoutY="132.0" prefHeight="40.0" prefWidth="123.0" style="-fx-border-color: green;" textAlignment="CENTER" />
+        <Button layoutX="99.0" layoutY="188.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="DEAL OUT" textFill="WHITE" />
+      </children>
+    </AnchorPane>
+  </children>
+</Pane>
