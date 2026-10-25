@@ -17,7 +17,6 @@ public class Carta {
         return this.valor;
     }
 
-    @Override
     public String toString() {
         return "La carta es " + valor + " de " + palo;
     }

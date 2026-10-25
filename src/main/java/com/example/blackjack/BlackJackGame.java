@@ -11,7 +11,7 @@ public class BlackJackGame extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(BlackJackGame.class.getResource("View/hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        Scene scene = new Scene(fxmlLoader.load(), 960, 540);
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
