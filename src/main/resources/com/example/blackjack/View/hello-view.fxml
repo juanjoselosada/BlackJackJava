@@ -20,10 +20,5 @@
           </image></ImageView>
       </children>
     </AnchorPane>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="505.0" layoutY="604.0">
-         <image>
-            <Image url="@../../../../../../../../../Downloads/background.jpg" />
-         </image>
-      </ImageView>
   </children>
 </Pane>
