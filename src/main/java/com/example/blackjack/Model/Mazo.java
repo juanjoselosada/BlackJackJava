@@ -2,19 +2,11 @@ package com.example.blackjack.Model;
 
 import java.util.ArrayList;
 
-public class Mazo {
+    public class Mazo {
+        private ArrayList<Carta> Mano = new ArrayList<>();
 
-  private ArrayList<Carta> Baraja = new ArrayList<>();
 
-  public Mazo(Carta carta) {
-    ArrayList<Carta> Baraja = new ArrayList<>();
-
-  }
-
-    public ArrayList<Carta> getMazo() {
-        return Baraja;
-    }
-
-    public void setBaraja(ArrayList<Carta> cartas) {
+        public Mazo(Carta carta) {
+        Mano.add(carta);
     }
 }

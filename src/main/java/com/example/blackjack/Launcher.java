@@ -9,7 +9,7 @@ public class Launcher {
         Carta carta;
         carta = new Carta("picas", "Ocho");
         System.out.println(new Carta("Corazones", "As"));
-        new Mazo(carta);
+        //new Mazo();
         Application.launch(BlackJackGame.class, args);
 
     }
