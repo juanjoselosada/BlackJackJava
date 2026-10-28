@@ -20,6 +20,8 @@ public class ReglasBlackjack {
         return "";
     }
 
-
+    public static int calcularAcreditacion(int apuesta, String resultado, boolean victoriaConBlackjack) {
+        if(resultado.equals())
+    }
 
 }
