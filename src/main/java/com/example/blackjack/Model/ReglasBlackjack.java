@@ -21,7 +21,33 @@ public class ReglasBlackjack {
     }
 
     public static int calcularAcreditacion(int apuesta, String resultado, boolean victoriaConBlackjack) {
-        if(resultado.equals())
+        if(resultado.equals()) {
+
+        }
+        return 0;
+    }
+
+    public static int calcularPuntaje(Mano mano) {
+
+        NodoMano actual = mano.getCabeza();
+        int suma = 0;
+        while(actual != null) {
+            String valor = actual.getCarta().getValor();
+
+            if(valor.equals("J") || valor.equals("Q") || valor.equals("K")) {
+
+            } else if (valor.equals("A")) {
+                // mas adelante
+            }
+            else () {
+                suma += Integer.parseInt(valor);
+            }
+
+            actual = actual.getSiguiente();
+        }
+        return suma;
+
+
     }
 
 }
