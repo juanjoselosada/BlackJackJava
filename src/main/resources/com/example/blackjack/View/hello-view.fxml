@@ -6,18 +6,27 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
   <children>
     <AnchorPane fx:id="rootPane" prefHeight="540.0" prefWidth="960.0" stylesheets="@../Css/BackGround.css">
       <children>
-        <Label layoutX="768.0" layoutY="471.0" prefHeight="27.0" prefWidth="157.0" style="-fx-border-color: white;" textAlignment="CENTER" />
-        <Button layoutX="424.0" layoutY="468.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="DEAL OUT" textFill="WHITE" />
+        <Label id="dinero" layoutX="768.0" layoutY="469.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="157.0" style="-fx-border-color: white;" text="1.000" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font></Label>
+        <Button layoutX="424.0" layoutY="468.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="REPARTIR" textFill="WHITE" />
             <Label layoutX="669.0" layoutY="475.0" prefHeight="20.0" prefWidth="99.0" text="  TOTAL DINERO" textAlignment="RIGHT" textFill="WHITE" />
          <ImageView fx:id="imgDado2" fitHeight="125.0" fitWidth="99.0" layoutX="33.0" layoutY="14.0">
           <image>
               <Image url="@../Images/JOKER.png" />
           </image></ImageView>
+            <Button layoutX="916.0" layoutY="14.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" />
+            <Button layoutX="873.0" layoutY="417.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="795.0" layoutY="417.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="719.0" layoutY="417.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="643.0" layoutY="417.0" mnemonicParsing="false" text="Button" />
       </children>
     </AnchorPane>
   </children>
