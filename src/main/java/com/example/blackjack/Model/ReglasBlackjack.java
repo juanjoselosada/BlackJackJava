@@ -68,5 +68,53 @@ public class ReglasBlackjack {
             return false;
         }
     }
+    public static boolean esVeinteYMedio(Mano mano) {
+        if(mano.getTamano() == 2 && calcularPuntaje(mano) == 14) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public static String determinarResultado(Mano manoJugador, Mano manoBanca, boolean jugadorSePaso, boolean bancaSePaso) {
+        if(jugadorSePaso) {
+            return "GANA_BANCA";
+        }
+        if(bancaSePaso) {
+            return "GANA_JUGADOR";
+        }
+        if (esBlackjack(manoJugador) && esBlackjack(manoBanca)) {
+            return "EMPATE";
+        }
+        if (esBlackjack(manoJugador)) {
+            return "GANA_JUGADOR";
+        }
+        if (esBlackjack(manoBanca)) {
+            return "GANA_BANCA";
+        }
+        if (esVeinteYMedio(manoJugador) && esVeinteYMedio(manoBanca)) {
+            return "EMPATE";
+        }
+        if (esVeinteYMedio(manoJugador)) {
+            if (calcularPuntaje(manoBanca) == 21) {
+                return "GANA_BANCA";
+            }
+            return "GANA_JUGADOR";
+        }
+        if (esVeinteYMedio(manoBanca)) {
+            if (calcularPuntaje(manoJugador) == 21) {
+                return "GANA_JUGADOR";
+            }
+            return "GANA_BANCA";
+        }
 
+        int pJ = calcularPuntaje(manoJugador);
+        int pB = calcularPuntaje(manoBanca);
+        if (pJ > pB) {
+            return "GANA_JUGADOR";
+        }
+        if (pB > pJ) {
+            return "GANA_BANCA";
+        }
+        return "EMPATE";
+    }
 }
