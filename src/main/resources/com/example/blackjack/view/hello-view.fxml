@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.blackjack.controller.HelloController">
+  <children>
+    <AnchorPane id="rootPane" prefHeight="540.0" prefWidth="960.0" stylesheets="@../Css/BackGround.css">
+      <children>
+        <Label id="totalDinero" fx:id="totalDinero" layoutX="768.0" layoutY="469.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="157.0" style="-fx-border-color: white;" text="1.000" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font></Label>
+            <Label layoutX="656.0" layoutY="480.0" prefHeight="20.0" prefWidth="112.0" text="  TOTAL DINERO" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Button layoutX="867.0" layoutY="270.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="811.0" layoutY="327.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="743.0" layoutY="270.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="686.0" layoutY="327.0" mnemonicParsing="false" text="Button" />
+         <ImageView fx:id="imgCarta1" fitHeight="174.0" fitWidth="112.0" layoutX="47.0" layoutY="39.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
+          <image>
+              <Image url="@../Images/JOKER.png" />
+          </image></ImageView>
+            <ImageView fx:id="imgCarta2" fitHeight="174.0" fitWidth="112.0" layoutX="193.0" layoutY="39.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
+               <image>
+                  <Image url="@../Images/JOKER.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarta3" fitHeight="174.0" fitWidth="112.0" layoutX="336.0" layoutY="39.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
+               <image>
+                  <Image url="@../Images/JOKER.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarta5" fitHeight="174.0" fitWidth="112.0" layoutX="47.0" layoutY="288.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
+               <image>
+                  <Image url="@../Images/JOKER.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarta6" fitHeight="174.0" fitWidth="112.0" layoutX="204.0" layoutY="288.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
+               <image>
+                  <Image url="@../Images/JOKER.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarta7" fitHeight="174.0" fitWidth="112.0" layoutX="345.0" layoutY="288.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
+               <image>
+                  <Image url="@../Images/JOKER.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarta4" fitHeight="174.0" fitWidth="112.0" layoutX="490.0" layoutY="39.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
+               <image>
+                  <Image url="@../Images/JOKER.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarta8" fitHeight="174.0" fitWidth="112.0" layoutX="490.0" layoutY="288.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
+               <image>
+                  <Image url="@../Images/JOKER.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="botonPlantarse" layoutX="781.0" layoutY="179.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="PLANTARSE" textFill="WHITE" />
+        <Button fx:id="botonRepartir" layoutX="781.0" layoutY="126.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="REPARTIR" textFill="WHITE" />
+            <Button fx:id="botonPerdir" layoutX="781.0" layoutY="64.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="PEDIR" textFill="WHITE" />
+            <Label layoutX="656.0" layoutY="429.0" prefHeight="20.0" prefWidth="112.0" text="       APUESTA" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="totalDinero" fx:id="totalDinero1" layoutX="769.0" layoutY="418.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="157.0" style="-fx-border-color: white;" text="1.000" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</Pane>
