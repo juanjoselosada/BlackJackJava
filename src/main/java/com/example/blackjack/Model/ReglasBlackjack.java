@@ -60,8 +60,13 @@ public class ReglasBlackjack {
             ases--;
         }
         return suma;
-
-
+    }
+    public static boolean esBlackjack(Mano mano) {
+        if(mano.getTamano() == 2 && calcularPuntaje(mano) == 21) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }
