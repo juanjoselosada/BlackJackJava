@@ -26,41 +26,41 @@
             <Button layoutX="686.0" layoutY="327.0" mnemonicParsing="false" text="Button" />
          <ImageView fx:id="imgCarta1" fitHeight="174.0" fitWidth="112.0" layoutX="47.0" layoutY="39.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
           <image>
-              <Image url="@../Images/JOKER.png" />
+              <Image url="@../Images/4_de_corazones.png" />
           </image></ImageView>
             <ImageView fx:id="imgCarta2" fitHeight="174.0" fitWidth="112.0" layoutX="193.0" layoutY="39.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
                <image>
-                  <Image url="@../Images/JOKER.png" />
+                  <Image url="@../Images/8_de_diamantes.png" />
                </image>
             </ImageView>
             <ImageView fx:id="imgCarta3" fitHeight="174.0" fitWidth="112.0" layoutX="336.0" layoutY="39.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
                <image>
-                  <Image url="@../Images/JOKER.png" />
+                  <Image url="@../Images/3_de_tréboles.png" />
                </image>
             </ImageView>
             <ImageView fx:id="imgCarta5" fitHeight="174.0" fitWidth="112.0" layoutX="47.0" layoutY="288.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
                <image>
-                  <Image url="@../Images/JOKER.png" />
+                  <Image url="@../Images/10_de_picas.png" />
                </image>
             </ImageView>
             <ImageView fx:id="imgCarta6" fitHeight="174.0" fitWidth="112.0" layoutX="204.0" layoutY="288.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
                <image>
-                  <Image url="@../Images/JOKER.png" />
+                  <Image url="@../Images/A_de_picas.png" />
                </image>
             </ImageView>
             <ImageView fx:id="imgCarta7" fitHeight="174.0" fitWidth="112.0" layoutX="345.0" layoutY="288.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
                <image>
-                  <Image url="@../Images/JOKER.png" />
+                  <Image url="@../Images/10_de_tréboles.png" />
                </image>
             </ImageView>
             <ImageView fx:id="imgCarta4" fitHeight="174.0" fitWidth="112.0" layoutX="490.0" layoutY="39.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
                <image>
-                  <Image url="@../Images/JOKER.png" />
+                  <Image url="@../Images/6_de_diamantes.png" />
                </image>
             </ImageView>
             <ImageView fx:id="imgCarta8" fitHeight="174.0" fitWidth="112.0" layoutX="490.0" layoutY="288.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
                <image>
-                  <Image url="@../Images/JOKER.png" />
+                  <Image url="@../Images/8_de_corazones.png" />
                </image>
             </ImageView>
             <Button fx:id="botonPlantarse" layoutX="781.0" layoutY="179.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="PLANTARSE" textFill="WHITE" />
