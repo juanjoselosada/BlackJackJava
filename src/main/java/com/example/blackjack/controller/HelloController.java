@@ -3,6 +3,11 @@ package com.example.blackjack.controller;
 import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.image.ImageView;
+import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+
+import java.awt.*;
+
 
 public class HelloController {
     @FXML
@@ -29,6 +34,32 @@ public class HelloController {
     @FXML
     private ImageView imgCarta8;
 
+    @FXML
+    private ImageView apostar2000;
+
+    @FXML
+    private ImageView apostar1000;
+
+    @FXML
+    private ImageView apostar500;
+
+    @FXML
+    private ImageView apostar200;
+
+
+
+
+
+
+    @FXML
+    private void apostar(MouseEvent mouseEvent){
+       if (mouseEvent.getSource() == imgCarta1) {
+
+       }
+
+
+
+    }
     @FXML
     private void aumentarCarta(MouseEvent mouseEvent) {
         if (mouseEvent.getSource() == imgCarta1) {

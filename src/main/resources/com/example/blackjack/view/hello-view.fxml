@@ -20,10 +20,6 @@
                <font>
                   <Font size="14.0" />
                </font></Label>
-            <Button layoutX="867.0" layoutY="270.0" mnemonicParsing="false" text="Button" />
-            <Button layoutX="811.0" layoutY="327.0" mnemonicParsing="false" text="Button" />
-            <Button layoutX="743.0" layoutY="270.0" mnemonicParsing="false" text="Button" />
-            <Button layoutX="686.0" layoutY="327.0" mnemonicParsing="false" text="Button" />
          <ImageView fx:id="imgCarta1" fitHeight="174.0" fitWidth="112.0" layoutX="47.0" layoutY="39.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
           <image>
               <Image url="@../Images/4_de_corazones.png" />
@@ -76,6 +72,26 @@
                   <Font size="27.0" />
                </font>
             </Label>
+            <ImageView fx:id="apostar2000" fitHeight="51.0" fitWidth="57.0" layoutX="875.0" layoutY="278.0" onMouseClicked="#apostar" preserveRatio="true">
+                <image>
+                    <Image url="@../Images/ficha_roja.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="apostar200" fitHeight="57.0" fitWidth="57.0" layoutX="705.0" layoutY="275.0" onMouseClicked="#apostar" preserveRatio="true">
+                <image>
+                    <Image url="@../Images/ficha_negra.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="apostar500" fitHeight="57.0" fitWidth="57.0" layoutX="762.0" layoutY="275.0" onMouseClicked="#apostar" preserveRatio="true">
+                <image>
+                    <Image url="@../Images/ficha_verde.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="apostar1000" fitHeight="57.0" fitWidth="64.0" layoutX="818.0" layoutY="275.0" onMouseClicked="#apostar" preserveRatio="true">
+                <image>
+                    <Image url="@../Images/ficha_azul.png" />
+                </image>
+            </ImageView>
       </children>
     </AnchorPane>
   </children>
