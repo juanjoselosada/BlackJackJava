@@ -1,8 +1,7 @@
 package com.example.blackjack;
 
-import com.example.blackjack.Model.Mazo;
 import javafx.application.Application;
-import com.example.blackjack.Model.Carta;
+import com.example.blackjack.model.Carta;
 
 public class Launcher {
     public static void main(String[] args) {

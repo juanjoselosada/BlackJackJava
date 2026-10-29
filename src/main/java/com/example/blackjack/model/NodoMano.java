@@ -1,4 +1,4 @@
-package com.example.blackjack.Model;
+package com.example.blackjack.model;
 
 public class NodoMano {
     private Carta carta;
