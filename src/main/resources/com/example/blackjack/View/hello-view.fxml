@@ -12,21 +12,59 @@
   <children>
     <AnchorPane fx:id="rootPane" prefHeight="540.0" prefWidth="960.0" stylesheets="@../Css/BackGround.css">
       <children>
-        <Label id="dinero" layoutX="768.0" layoutY="469.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="157.0" style="-fx-border-color: white;" text="1.000" textAlignment="RIGHT" textFill="WHITE">
+        <Label id="totalDinero" fx:id="totalDinero" layoutX="768.0" layoutY="469.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="157.0" style="-fx-border-color: white;" text="1.000" textAlignment="RIGHT" textFill="WHITE">
                <font>
                   <Font size="27.0" />
                </font></Label>
-        <Button layoutX="424.0" layoutY="468.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="REPARTIR" textFill="WHITE" />
             <Label layoutX="669.0" layoutY="475.0" prefHeight="20.0" prefWidth="99.0" text="  TOTAL DINERO" textAlignment="RIGHT" textFill="WHITE" />
-         <ImageView fx:id="imgDado2" fitHeight="125.0" fitWidth="99.0" layoutX="33.0" layoutY="14.0">
+            <Button layoutX="916.0" layoutY="14.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" />
+            <Button layoutX="873.0" layoutY="404.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="801.0" layoutY="404.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="719.0" layoutY="404.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="643.0" layoutY="404.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="561.0" layoutY="404.0" mnemonicParsing="false" text="Button" />
+         <ImageView fx:id="imgCarta1" fitHeight="125.0" fitWidth="99.0" layoutX="14.0" layoutY="14.0" onMouseEntered="#aumentarCarta">
           <image>
               <Image url="@../Images/JOKER.png" />
           </image></ImageView>
-            <Button layoutX="916.0" layoutY="14.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" />
-            <Button layoutX="873.0" layoutY="417.0" mnemonicParsing="false" text="Button" />
-            <Button layoutX="795.0" layoutY="417.0" mnemonicParsing="false" text="Button" />
-            <Button layoutX="719.0" layoutY="417.0" mnemonicParsing="false" text="Button" />
-            <Button layoutX="643.0" layoutY="417.0" mnemonicParsing="false" text="Button" />
+            <ImageView fx:id="imgCarta2" fitHeight="125.0" fitWidth="99.0" layoutX="130.0" layoutY="14.0" onMouseEntered="#aumentarCarta">
+               <image>
+                  <Image url="@../Images/JOKER.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarta3" fitHeight="125.0" fitWidth="99.0" layoutX="247.0" layoutY="14.0" onMouseEntered="#aumentarCarta">
+               <image>
+                  <Image url="@../Images/JOKER.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarta5" fitHeight="125.0" fitWidth="99.0" layoutX="14.0" layoutY="321.0" onMouseEntered="#aumentarCarta">
+               <image>
+                  <Image url="@../Images/JOKER.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarta6" fitHeight="125.0" fitWidth="99.0" layoutX="130.0" layoutY="321.0" onMouseEntered="#aumentarCarta">
+               <image>
+                  <Image url="@../Images/JOKER.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarta7" fitHeight="125.0" fitWidth="99.0" layoutX="247.0" layoutY="321.0" onMouseEntered="#aumentarCarta">
+               <image>
+                  <Image url="@../Images/JOKER.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarta4" fitHeight="125.0" fitWidth="99.0" layoutX="361.0" layoutY="14.0" onMouseEntered="#aumentarCarta">
+               <image>
+                  <Image url="@../Images/JOKER.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarta8" fitHeight="125.0" fitWidth="99.0" layoutX="364.0" layoutY="322.0" onMouseEntered="#aumentarCarta">
+               <image>
+                  <Image url="@../Images/JOKER.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="botonPlantarse" layoutX="689.0" layoutY="321.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="PLANTARSE" textFill="WHITE" />
+        <Button fx:id="botonRepartir" layoutX="817.0" layoutY="321.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="REPARTIR" textFill="WHITE" />
+            <Button fx:id="botonPerdir" layoutX="557.0" layoutY="321.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="PEDIR" textFill="WHITE" />
       </children>
     </AnchorPane>
   </children>
