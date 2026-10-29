@@ -20,48 +20,28 @@
                <font>
                   <Font size="14.0" />
                </font></Label>
-         <ImageView fx:id="imgCarta1" fitHeight="174.0" fitWidth="112.0" layoutX="47.0" layoutY="39.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
-          <image>
-              <Image url="@../Images/4_de_corazones.png" />
-          </image></ImageView>
-            <ImageView fx:id="imgCarta2" fitHeight="174.0" fitWidth="112.0" layoutX="193.0" layoutY="39.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
-               <image>
-                  <Image url="@../Images/8_de_diamantes.png" />
-               </image>
+            <ImageView fx:id="imgCarta1" fitHeight="174.0" fitWidth="112.0" layoutX="47.0" layoutY="39.0" onMouseEntered="#aumentar" onMouseExited="#restaurar">
+
             </ImageView>
-            <ImageView fx:id="imgCarta3" fitHeight="174.0" fitWidth="112.0" layoutX="336.0" layoutY="39.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
-               <image>
-                  <Image url="@../Images/3_de_tréboles.png" />
-               </image>
+          <ImageView fx:id="imgCarta2" fitHeight="174.0" fitWidth="112.0" layoutX="193.0" layoutY="39.0" onMouseEntered="#aumentar" onMouseExited="#restaurar">
             </ImageView>
-            <ImageView fx:id="imgCarta5" fitHeight="174.0" fitWidth="112.0" layoutX="47.0" layoutY="288.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
-               <image>
-                  <Image url="@../Images/10_de_picas.png" />
-               </image>
+            <ImageView fx:id="imgCarta3" fitHeight="174.0" fitWidth="112.0" layoutX="336.0" layoutY="39.0" onMouseEntered="#aumentar" onMouseExited="#restaurar">
             </ImageView>
-            <ImageView fx:id="imgCarta6" fitHeight="174.0" fitWidth="112.0" layoutX="204.0" layoutY="288.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
-               <image>
-                  <Image url="@../Images/A_de_picas.png" />
-               </image>
+            <ImageView fx:id="imgCarta5" fitHeight="174.0" fitWidth="112.0" layoutX="47.0" layoutY="288.0" onMouseEntered="#aumentar" onMouseExited="#restaurar">
             </ImageView>
-            <ImageView fx:id="imgCarta7" fitHeight="174.0" fitWidth="112.0" layoutX="345.0" layoutY="288.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
-               <image>
-                  <Image url="@../Images/10_de_tréboles.png" />
-               </image>
+            <ImageView fx:id="imgCarta6" fitHeight="174.0" fitWidth="112.0" layoutX="204.0" layoutY="288.0" onMouseEntered="#aumentar" onMouseExited="#restaurar">
             </ImageView>
-            <ImageView fx:id="imgCarta4" fitHeight="174.0" fitWidth="112.0" layoutX="490.0" layoutY="39.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
-               <image>
-                  <Image url="@../Images/6_de_diamantes.png" />
-               </image>
+            <ImageView fx:id="imgCarta7" fitHeight="174.0" fitWidth="112.0" layoutX="345.0" layoutY="288.0" onMouseEntered="#aumentar" onMouseExited="#restaurar">
             </ImageView>
-            <ImageView fx:id="imgCarta8" fitHeight="174.0" fitWidth="112.0" layoutX="490.0" layoutY="288.0" onMouseEntered="#aumentarCarta" onMouseExited="#restaurarCarta">
-               <image>
-                  <Image url="@../Images/8_de_corazones.png" />
-               </image>
+            <ImageView fx:id="imgCarta4" fitHeight="174.0" fitWidth="112.0" layoutX="490.0" layoutY="39.0" onMouseEntered="#aumentar" onMouseExited="#restaurar">
+
             </ImageView>
-            <Button fx:id="botonPlantarse" layoutX="781.0" layoutY="179.0" mnemonicParsing="false" onAction="#plantarse" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="PLANTARSE" textFill="WHITE" />
-        <Button fx:id="botonRepartir" layoutX="781.0" layoutY="126.0" mnemonicParsing="false" onAction="#repartir" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="REPARTIR" textFill="WHITE" />
-            <Button fx:id="botonPerdir" layoutX="781.0" layoutY="64.0" mnemonicParsing="false" onAction="#pedirCarta" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="PEDIR" textFill="WHITE" />
+            <ImageView fx:id="imgCarta8" fitHeight="174.0" fitWidth="112.0" layoutX="490.0" layoutY="288.0" onMouseEntered="#aumentar" onMouseExited="#restaurar">
+
+            </ImageView>
+            <Button fx:id="botonPlantarse" layoutX="781.0" layoutY="179.0" mnemonicParsing="false" onAction="#plantarse" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: white;" text="PLANTARSE" />
+          <Button fx:id="botonRepartir" layoutX="781.0" layoutY="75.0" mnemonicParsing="false" onAction="#iniciarPartida" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: white;" text="INICIAR" />
+            <Button fx:id="botonPerdir" layoutX="781.0" layoutY="126.0" mnemonicParsing="false" onAction="#repartir" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: white;" text="PEDIR" />
             <Label layoutX="656.0" layoutY="429.0" prefHeight="20.0" prefWidth="112.0" text="       APUESTA" textAlignment="RIGHT" textFill="WHITE">
                <font>
                   <Font size="14.0" />
@@ -72,22 +52,22 @@
                   <Font size="27.0" />
                </font>
             </Label>
-            <ImageView fx:id="apostar2000" fitHeight="51.0" fitWidth="57.0" layoutX="875.0" layoutY="278.0" onMouseClicked="#apostar" preserveRatio="true">
+            <ImageView fx:id="apostar2000" fitHeight="51.0" fitWidth="57.0" layoutX="875.0" layoutY="278.0" onDragExited="#restaurar" onMouseClicked="#apostar" onMouseEntered="#aumentar" onMouseExited="#restaurar" preserveRatio="true">
                 <image>
                     <Image url="@../Images/ficha_roja.png" />
                 </image>
             </ImageView>
-            <ImageView fx:id="apostar200" fitHeight="57.0" fitWidth="57.0" layoutX="705.0" layoutY="275.0" onMouseClicked="#apostar" preserveRatio="true">
+            <ImageView fx:id="apostar200" fitHeight="57.0" fitWidth="57.0" layoutX="705.0" layoutY="275.0" onMouseClicked="#apostar" onMouseEntered="#aumentar" onMouseExited="#restaurar" preserveRatio="true">
                 <image>
                     <Image url="@../Images/ficha_negra.png" />
                 </image>
             </ImageView>
-            <ImageView fx:id="apostar500" fitHeight="57.0" fitWidth="57.0" layoutX="762.0" layoutY="275.0" onMouseClicked="#apostar" preserveRatio="true">
+            <ImageView fx:id="apostar500" fitHeight="57.0" fitWidth="57.0" layoutX="762.0" layoutY="275.0" onMouseClicked="#apostar" onMouseEntered="#aumentar" onMouseExited="#restaurar" preserveRatio="true">
                 <image>
                     <Image url="@../Images/ficha_verde.png" />
                 </image>
             </ImageView>
-            <ImageView fx:id="apostar1000" fitHeight="57.0" fitWidth="64.0" layoutX="818.0" layoutY="275.0" onMouseClicked="#apostar" preserveRatio="true">
+            <ImageView fx:id="apostar1000" fitHeight="57.0" fitWidth="64.0" layoutX="819.0" layoutY="275.0" onDragExited="#restaurar" onMouseClicked="#apostar" onMouseEntered="#aumentar" onMouseExited="#restaurar" preserveRatio="true">
                 <image>
                     <Image url="@../Images/ficha_azul.png" />
                 </image>

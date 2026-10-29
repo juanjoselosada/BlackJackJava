@@ -13,7 +13,8 @@ public class Partida {
     private Mano manoJugador;
     private Mano manoBanca;
 
-    public Partida() {
+
+    public void partida() {
     this.saldo = SALDO_INICIAL;
     apuestaActual = 0;
     rondaActiva = false;
