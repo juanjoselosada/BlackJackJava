@@ -213,16 +213,17 @@ public class Partida {
                 return ResultadoRonda.NINGUNO;
         }
     }
-}
 
-enum Turno {
-    JUGADOR,
-    BANCA,
-    FIN_RONDA
-}
-enum ResultadoRonda {
-    NINGUNO,
-    GANA_JUGADOR,
-    GANA_BANCA,
-    EMPATE
+    public enum Turno {
+        JUGADOR,
+        BANCA,
+        FIN_RONDA
+    }
+
+    public enum ResultadoRonda {
+        NINGUNO,
+        GANA_JUGADOR,
+        GANA_BANCA,
+        EMPATE
+    }
 }

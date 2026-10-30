@@ -59,9 +59,9 @@
                   <Image url="@../Images/8_de_corazones.png" />
                </image>
             </ImageView>
-            <Button fx:id="botonPlantarse" layoutX="781.0" layoutY="179.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="PLANTARSE" textFill="WHITE" />
-        <Button fx:id="botonRepartir" layoutX="781.0" layoutY="126.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="REPARTIR" textFill="WHITE" />
-            <Button fx:id="botonPerdir" layoutX="781.0" layoutY="64.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="PEDIR" textFill="WHITE" />
+            <Button fx:id="botonPlantarse" layoutX="781.0" layoutY="179.0" mnemonicParsing="false" onAction="#plantarse" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="PLANTARSE" textFill="WHITE" />
+        <Button fx:id="botonRepartir" layoutX="781.0" layoutY="126.0" mnemonicParsing="false" onAction="#repartir" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="REPARTIR" textFill="WHITE" />
+            <Button fx:id="botonPerdir" layoutX="781.0" layoutY="64.0" mnemonicParsing="false" onAction="#pedirCarta" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: green;" text="PEDIR" textFill="WHITE" />
             <Label layoutX="656.0" layoutY="429.0" prefHeight="20.0" prefWidth="112.0" text="       APUESTA" textAlignment="RIGHT" textFill="WHITE">
                <font>
                   <Font size="14.0" />
