@@ -1,12 +1,8 @@
 package com.example.blackjack.controller;
 
 import javafx.fxml.FXML;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.image.ImageView;
-import javafx.scene.control.Label;
-import javafx.scene.image.Image;
-
-import java.awt.*;
+import javafx.scene.input.MouseEvent;
 
 
 public class HelloController {
@@ -52,13 +48,18 @@ public class HelloController {
 
 
     @FXML
-    private void apostar(MouseEvent mouseEvent){
-       if (mouseEvent.getSource() == imgCarta1) {
+    private void apostar(MouseEvent mouseEvent) {
+        Object origen = mouseEvent.getSource();
 
-       }
-
-
-
+        if (origen == apostar200) {
+            // ficha de 200
+        } else if (origen == apostar500) {
+            // ficha de 500
+        } else if (origen == apostar1000) {
+            // ficha de 1000
+        } else if (origen == apostar2000) {
+            // ficha de 2000
+        }
     }
     @FXML
     private void aumentarCarta(MouseEvent mouseEvent) {
